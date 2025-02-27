@@ -16,15 +16,39 @@
             <input id="find" type="text" placeholder="Найти на WildParis" >
             <button id="search" type="reset" style="display: inline;">Найти</button>
             <div class="buttonsofmenu">
-                <div class="menu_buttons"> <img src="https://static.tildacdn.com/tild3938-6535-4466-a531-616432663735/cart-icon-png-white-.jpg" alt="bucket" draggable="false" width="50">
-                <span class="icon-text">Корзина</span> </div>
-                <div class="menu_buttons"> <img src="https://linenmill.by/wp-content/uploads/2024/03/8702964.png" alt="login" draggable="false" width="42">
-                <span class="icon-text">Профиль</span> </div>
-                <div class="menu_buttons"> <img src="https://oxe-pool-profi.ru/images/tild3637-6265-4365-a562-616138623033___.png" alt="we" draggable="false" width="37">
-                <span class="icon-text">Связь с нами</span> </div>
+                <div class="menu_buttons"> 
+                    <div class="icon-container">
+                        <img src="https://static.tildacdn.com/tild3938-6535-4466-a531-616432663735/cart-icon-png-white-.jpg" alt="bucket" draggable="false" width="50">
+                    </div>
+                    <span class="icon-text">Корзина</span> 
+                </div>
+                <div class="menu_buttons"> 
+                    <div class="icon-container">
+                        <img src="https://linenmill.by/wp-content/uploads/2024/03/8702964.png" alt="login" draggable="false" width="42">
+                    </div>
+                    <span class="icon-text">Профиль</span> 
+                </div>
+                <div class="menu_buttons"> 
+                    <div class="icon-container">
+                        <img src="https://oxe-pool-profi.ru/images/tild3637-6265-4365-a562-616138623033___.png" alt="we" draggable="false" width="37">
+                    </div>
+                    <span class="icon-text">Связь с нами</span> 
+                </div>
             </div>
         </form> 
     </header>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slides">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/c2fdda57093921.59ce7c5d6b450.jpg" class="slide" alt="eiffel_tower" draggable="false">
+                <img src="https://avatars.mds.yandex.net/i?id=41346d2ccbda4219ec022d075af9ee85_l-5092287-images-thumbs&n=13" class="slide" alt="big_ben" draggable="false">
+                <img src="https://images3.alphacoders.com/960/96015.jpg" class="slide" alt="tower_of_pisa" draggable="false">
+            </div>
+            <button class="slider_button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="slider_button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
 
     <div class="container">
         <div class="box"></div>

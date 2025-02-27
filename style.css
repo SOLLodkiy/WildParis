@@ -1,8 +1,9 @@
 body {
     background-color: #f5e9fd;
     text-align: center;
-    margin: 0;  /* Убирает внешний отступ */
-    padding: 0; /* Убирает внутренний отступ */
+    margin: 0; 
+    padding: 0;
+    overflow-x: hidden;
 }
 
 #wild {
@@ -77,9 +78,9 @@ header form {
 .container {
     display: grid;
     grid-template-columns: repeat(6, 0fr);
-    justify-content: center; /* Выравниваем элементы по центру */
-    align-items: center; /* Выравниваем по вертикали */
-    gap: 25px; /* Расстояние между блоками */
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
     position: relative;
     bottom: -25px;
   }
@@ -123,6 +124,13 @@ header form {
     transition: transform 0.3s ease;
 }
 
+.icon-container {
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu_buttons:hover {
     transform: translateY(-10px);
 }
@@ -135,6 +143,7 @@ header form {
     opacity: 0;
     transition: opacity 0.3s ease;
     white-space: nowrap;
+    pointer-events: none; 
 }
 
 .menu_buttons:hover .icon-text {
@@ -146,3 +155,55 @@ header form {
     gap: 30px;
     margin-left: auto;
 }
+
+.slider-container {
+    display: flex;
+    padding: 0.7%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slider {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    top: -45px;
+}
+
+.slider_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.slider_button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
